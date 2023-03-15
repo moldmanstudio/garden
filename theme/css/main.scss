@@ -1,0 +1,67 @@
+/* Customzied Pico theme */
+
+// Import Pico
+@import "../../pico/scss/pico";
+
+// Override default variables
+[data-theme="dark"] {
+    --primary: rgba(255, 255, 255, 0.5);
+    --primary-hover: rgba(255, 255, 255, 0.8);
+    --primary-focus: rgba(255, 255, 255, 0.2);
+    --primary-inverse: #FFF;
+}
+
+html {
+    background: url(../images/bg.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.studio-logo {
+    float: left;
+    margin: 1.0rem;
+    width: 3.0rem;
+    height: 3.0rem;
+}
+
+.page-header {
+    margin-top: 2.0rem;
+    margin-bottom: 0.2rem;
+}
+
+ul#post-list li {
+    list-style: disc;
+}
+
+ul.margin-min li > * {
+    margin-bottom: 0.2rem;
+}
+
+ul#tag-list li {
+    list-style: none;
+}
+
+.update-date {
+    font-size: 0.6rem;
+}
+
+a.tag {
+  font-size: 0.6rem;
+  background-color: var(--primary-focus);
+  border: none;
+  color: var(--primary);
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 32px;
+}
+
+footer {
+    font-size: 0.7rem;
+}
