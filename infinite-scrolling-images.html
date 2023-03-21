@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <title>Moldman Studio Garden</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://moldmanstudio.github.io/garden/theme/css/main.css">
+</head>
+
+<body>
+    <a href="https://moldmanstudio.github.io/garden/">
+        <img src="https://moldmanstudio.github.io/garden/images/studio-logo-sm.png" class="studio-logo">
+    </a>
+
+    <div class="container">
+
+        <nav>
+            <ul>
+            </ul>
+        </nav>
+
+        <main>
+<section id="content">
+<h2 class="page-header">Infinite Scrolling Images in Resolume</h2>
+
+<h6><p>Towards an infinite scrolling image in Resolume</p></h6>
+
+<div>
+    Tags:
+        <a href="https://moldmanstudio.github.io/garden/tag/creative-coding.html" class="tag" rel="bookmark" title="Permalink to creative-coding">creative-coding</a> 
+</div>
+
+<hr>
+<p>One of the first ideas I had around <a href="https://moldmanstudio.github.io/garden/dawn-in-the-garden.html">breathing some life into my static images</a>
+is to make an image that slowly scrolls forever. This should be a pretty basic
+test run with plenty of room for expansion down the road.</p>
+<p>In previous attempts at this idea, I've used creative coding frameworks like
+<a href="https://libcinder.org/">Cinder</a>. In this case I was able to move the image
+programatically and then detect when it was approaching the end. At that point
+I would begin to fade it out while beginnning to fade in the next image. 
+Things will need to be handled a bit differently in Resolume, I think. I'm not
+sure yet how to detect that the image is approaching the edge and is about to
+be repeated, for example. My hunch is that I need to just let it cycle around
+and repeat, but hide the cutoff somehow, maybe using a layer mask so that the
+image is fully transparent at the time it repeats.</p>
+
+<div>
+    <small class="update-date">Last updated Mar 20 2023</small>
+</div>
+
+</section><!-- /#content -->
+
+        </main>
+
+        <footer>
+        </footer>
+
+    </div> <!-- container -->
+</body>
+</html>
